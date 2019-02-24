@@ -1,0 +1,1 @@
+# gsplegalAngular7
