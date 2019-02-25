@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { TaetigkeitComponent } from './taetigkeit/taetigkeit.component';
+import { HomeComponent } from './home/home.component';
+import { InternationalComponent } from './international/international.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -19,7 +22,10 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     TeamComponent,
-    TaetigkeitComponent
+    TaetigkeitComponent,
+    HomeComponent,
+    InternationalComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,
