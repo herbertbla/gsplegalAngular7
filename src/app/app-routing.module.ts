@@ -7,8 +7,9 @@ import {KontaktComponent} from "./kontakt/kontakt.component";
 import {InternationalComponent} from "./international/international.component";
 
 const routes: Routes = [
-  { path: 'team', component: TeamComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'team', component: TeamComponent },
   { path: 'taetigkeitsbereich', component: TaetigkeitComponent },
   { path: 'international', component: InternationalComponent },
   { path: 'kontakt', component:  KontaktComponent }
