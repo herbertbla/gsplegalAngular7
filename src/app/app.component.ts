@@ -18,4 +18,7 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('de');
   }
+  openTodo = function() {
+    window.open('http://jupiter.bplaced.net/todo.htm');
+  }
 }
