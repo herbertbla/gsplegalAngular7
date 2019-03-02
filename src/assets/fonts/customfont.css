@@ -2,3 +2,8 @@
   font-family: gsptitlefont;
   src: url("/assets/fonts/Univers-LT-Std-39-Thin-Ultra-Condensed_46329.ttf") format("truetype");
 }
+@font-face {
+  font-family: gsptextfont;
+  src: url("/assets/fonts/SourceSansPro-Regular.otf") format("truetype");
+}
+
