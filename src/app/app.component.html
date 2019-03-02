@@ -6,29 +6,29 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/home"> {{'HOME' | translate:HOME | uppercase}}</a>
+            <a class="nav-link" routerLink="/home"> {{'HOME' | translate | uppercase}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/team"> {{'TEAM' | translate:TEAM | uppercase}} </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-               routerLink="/taetigkeitsbereich"> {{'TAETIGKEITSBEREICH' | translate:TAETIGKEITSBEREICH | uppercase}} </a>
+            <a class="nav-link" routerLink="/team"> {{'TEAM' | translate | uppercase}} </a>
           </li>
           <li class="nav-item">
             <a class="nav-link"
-               routerLink="/international"> {{'INTERNATIONAL' | translate:INTERNATIONAL | uppercase}} </a>
+               routerLink="/taetigkeitsbereich"> {{'TAETIGKEITSBEREICH' | translate | uppercase}} </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/kontakt"> {{'KONTAKT' | translate:KONTAKT | uppercase}} </a>
+            <a class="nav-link"
+               routerLink="/international"> {{'INTERNATIONAL' | translate | uppercase}} </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/kontakt"> {{'KONTAKT' | translate | uppercase}} </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [ngStyle]="{'color': 'blue', 'cursor' : 'pointer'}"
-               (click)="changeLanguage('de')"> {{'DEUTSCH' | translate:KONTAKT | uppercase}} </a>
+               (click)="changeLanguage('de')"> {{'DEUTSCH' | translate | uppercase}} </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [ngStyle]="{'color': 'blue', 'cursor' : 'pointer'}"
-               (click)="changeLanguage('en')"> {{'ENGLISCH' | translate:KONTAKT | uppercase}} </a>
+               (click)="changeLanguage('en')"> {{'ENGLISCH' | translate | uppercase}} </a>
           </li>
         </ul>
       </nav>
@@ -42,9 +42,9 @@
 
 <div class="panel-footer" style="color: white;">
   <div class="container">
-    <div class="row">
+    <div class="row" style="background-color: darkblue; ">
       <div class="col-md-2"></div>
-      <div class="col-md-4" style="background-color: darkblue; ">
+      <div class="col-md-4" >
         <div>GARGER SPALLINGER Rechtsanwälte GmbH</div>
         <div>Porzellangasse 39 A-1090 Wien</div>
         <div>Tel: +43-1-319 94 70, Fax: +43-1-319 94 70-70</div>
