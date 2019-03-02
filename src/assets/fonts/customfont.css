@@ -1,9 +1,9 @@
-@font-face {
-  font-family: gsptitlefont;
+/*@font-face {
+  font-family: Univers LT Std;
   src: url("/assets/fonts/Univers-LT-Std-39-Thin-Ultra-Condensed_46329.ttf") format("truetype");
-}
+}*/
 @font-face {
-  font-family: gsptextfont;
+  font-family: SourceSansPro-Regular;
   src: url("/assets/fonts/SourceSansPro-Regular.otf") format("truetype");
 }
 
