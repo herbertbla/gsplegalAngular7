@@ -6,7 +6,7 @@
   "KONTAKT": "Kontakt",
   "DEUTSCH": "DEUTSCH",
   "ENGLISCH": "English",
-  "HOMEHEAD": "Herzlich willkommen bei GARGER SPALLINGER HUGER Rechtsanwälte GmbH.",
+  "HOMEHEAD": "Herzlich willkommen bei GARGER SPALLINGER Rechtsanwälte GmbH.",
   "HOMEP1": "Wir verstehen uns als eine auf Wirtschaftsrecht spezialisierte Anwaltskanzlei, die nationale und internationale Unternehmen umfassend in den Bereichen Gesellschafts- und Unternehmensrecht, Umgründungen und Umstrukturierungen, Arbeits- und Versicherungsrecht sowie in streitigen Verfahren berät. Das können wir Ihnen aufgrund unserer langjährigen Erfahrung und juristischen und betriebswirtschaftlichen Ausbildung garantieren.",
   "HOMEP2": "Mit einem Team von Spezialisten bieten wir eine effiziente Beratung auf höchstem Niveau. Wir haben in großen und mittelgroßen Anwaltskanzleien langjährige Erfahrungen gesammelt und kennen deren Stärken und Schwächen. Wir verstehen uns als Nischenplayer, der maßgeschneiderte Lösungen im Interesse unserer Mandanten erarbeitet. Wenn ein konkreter Auftrag nicht in unser Portfolio passt, sagen wir Ihnen das und empfehlen Ihnen geeignete Spezialisten.",
   "HOMEP3": "Wir stehen für Verantwortung und eine langfristige Kooperation.",
@@ -26,5 +26,15 @@
   "VERTRAGSGESTALTUNG": "Vertragsgestaltung, Zivil- und Schadenersatzrecht",
   "OEFFENTLICHKEITSRECHT": "Öffentlichkeitsrecht",
   "IMMOBILIENRECHT": "IMMOBILIENRECHT",
-  "LITIGATION": "Zivilprozessrecht"
+  "LITIGATION": "Zivilprozessrecht",
+  "RACODE": "RA",
+  "UID": "UID",
+  "DVR": "DVR Nr.",
+  "WEBPROG": "Website Programmierung",
+  "BHAFT": " Bildnachweis 'Haftungsausschluss'",
+  "BIMP": "Bildnachweis 'Impressum'",
+  "BANF": "Bildnachweis 'Anfahrt'",
+  "HAFTP1": "GARGER SPALLINGER Rechtsanwälte GmbH übernimmt keine Haftung für die Inhalte der auf dieser Website über Hyperlinks zugänglichen Websites Dritter. Die Verwendung der auf dieser Website gespeicherten Inhalte bedarf der vorherigen Zustimmung von GARGER SPALLINGER Rechtsanwälte GmbH. Wir weisen darauf hin, dass Informationen auf dieser Site technische Ungenauigkeiten oder typografische Fehler enthalten sein können.",
+  "HAFTP2": "Wir behalten uns vor, die Informationen auf dieser Site jederzeit und ohne vorherige Ankündigung zu ändern oder zu aktualisieren. Alle auf unseren Internetseiten veröffentlichten Werke bzw. Werkteile wie z.B. Texte, Dateien, Kompositionen und Bilder sind rechtlich geschützt. Jede weitere Veröffentlichung, Vervielfältigung, Verbreitung oder sonstige Nutzung - auch auszugsweise - bedarf der schriftlichen Genehmigung von GARGER SPALLINGER Rechtsanwälte GmbH.",
+  "IMPP1": "Wir sind Rechtsanwälte nach österreichischem Recht und unterliegen der Aufsicht der Rechtsanwaltskammer Wien sowie dem einschlägigen Standesrecht."
 }

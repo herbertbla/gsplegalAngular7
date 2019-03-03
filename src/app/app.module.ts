@@ -13,6 +13,9 @@ import { TaetigkeitComponent } from './taetigkeit/taetigkeit.component';
 import { HomeComponent } from './home/home.component';
 import { InternationalComponent } from './international/international.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { HaftungsausschlussComponent } from './haftungsausschluss/haftungsausschluss.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,7 +28,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     TaetigkeitComponent,
     HomeComponent,
     InternationalComponent,
-    KontaktComponent
+    KontaktComponent,
+    ImpressumComponent,
+    HaftungsausschlussComponent,
+    DatenschutzComponent
   ],
   imports: [
     BrowserModule,
