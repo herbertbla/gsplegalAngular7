@@ -1,10 +1,10 @@
 
 @font-face {
   font-family: SourceSansPro-Regular;
-  src: url("/assets/fonts/SourceSansPro-Regular.otf") format("truetype");
+  src: url("SourceSansPro-Regular.otf") format("truetype");
 }
 @font-face {
-  font-family: OpenSans CondLight;
-  src: url("/assets/fonts/OpenSans-CondLight.ttf") format("truetype");
+  font-family: Open Sans Condensedt;
+  src: url("OpenSans-CondLight.ttf") format("truetype");
 }
 
