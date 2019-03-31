@@ -44,25 +44,25 @@
 <router-outlet></router-outlet>
 
 
-<div class="panel-footer" style="color:white; background-color: rgb(38,50,104); ">
+<div class="panel-footer" style="color:white; background-color: rgb(38,50,104); padding-top: 1vh">
   <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-4">
             <address>
-                <strong>GARGER SPALLINGER Rechtsanwälte GmbH</strong><br>
-                Porzellangasse 39 A-1090 Wien<br>
+                GARGER SPALLINGER Rechtsanwälte GmbH<br>
+                Porzellangasse 39, A-1090 Wien<br>
                 Tel: +43-1-319 94 70,
                 Fax: +43-1-319 94 70-70<br/>
-                <a href="mailto:office@gsplegal.at">Email: office(AT)gsplegal.at </a>
+                <a class="gspfooterlink" href="mailto:office@gsplegal.at">office(AT)gsplegal.at </a>
             </address>
       </div>
       <div class="col-md-6">
-        <a routerLink="/impressum"> {{'IMPRESSUM' | translate |
+        <a routerLink="/impressum" class="gspfooterlink"  routerLinkActive="gsprouterlinkactive" > {{'IMPRESSUM' | translate |
           uppercase}} </a> <br/>
-        <a routerLink="/haftungsausschluss"> {{'HAFTUNGSAUSSCHLUSS' |
+        <a routerLink="/haftungsausschluss" class="gspfooterlink"  routerLinkActive="gsprouterlinkactive" > {{'HAFTUNGSAUSSCHLUSS' |
           translate | uppercase}} </a> <br/>
-        <a routerLink="/datenschutz"> {{'DATENSCHUTZ' | translate |
+        <a routerLink="/datenschutz" class="gspfooterlink"  routerLinkActive="gsprouterlinkactive" > {{'DATENSCHUTZ' | translate |
           uppercase}} </a> <br/>
         <div>© {{'ALLERECHTE' | translate }}</div>
       </div>
