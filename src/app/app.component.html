@@ -24,14 +24,12 @@
             <a class="nav-link gspheadertext" routerLink="/kontakt" routerLinkActive="gsprouterlinkactive"> {{'KONTAKT' | translate | uppercase}} </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link gspheadertext"
-               [ngStyle]="{'cursor' : 'pointer', 'padding-right' : '0px',  'font-size' : '0.8rem', 'padding-top' : '12px'}"
-               (click)="changeLanguage('de')"> {{'DEUTSCH' | translate | uppercase}} </a>
+            <a id="deutschID" class="nav-link gspheaderlanguage"
+               (click)="changeLanguage('de')"> {{'DEUTSCH' | translate}} </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link gspheadertext"
-               [ngStyle]="{'color': '#878EAB', 'cursor' : 'pointer', 'font-size' : '0.8rem', 'padding-top' : '12px'}"
-               (click)="changeLanguage('en')"> {{'ENGLISCH' | translate | uppercase}} </a>
+            <a id="englishID" class="nav-link gspheaderlanguage"
+               (click)="changeLanguage('en')"> {{'ENGLISCH' | translate}} </a>
           </li>
            <li class="nav-item">
             <span class="btn btn-danger" (click)="openTodo()">todo</span>
