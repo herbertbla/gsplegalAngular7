@@ -1,11 +1,2 @@
-
-/*
-@font-face {
-  font-family: SourceSansPro-Regular;
-  src: url("SourceSansPro-Regular.otf") format("truetype");
-}
-@font-face {
-  font-family: Open Sans Condensedt;
-  src: url("OpenSans-CondLight.ttf") format("truetype");
-}*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Sans+Pro&display=swap');
 
