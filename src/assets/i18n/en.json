@@ -4,6 +4,7 @@
   "TAETIGKEITSBEREICH": "Areas of Practice",
   "INTERNATIONAL": "international",
   "KONTAKT": "contact",
+  "ANFAHRT": "journey",
   "DEUTSCH": "Deutsch",
   "ENGLISCH": "English",
   "HOMEHEAD": "Welcome to GARGER SPALLINGER Rechtsanwälte GmbH, Attorneys-at-Law.",
@@ -64,5 +65,8 @@
   "DATP71": "We will not store data for a longer period than required for the fulfillment of our contractual respectively legal obligations and as required for the defense of possible liability claims. In this respect, we will also consider legal retention and documentation obligations.",
   "DATH8": "8. Our contact details",
   "DATP81": "The protection of your data is very important for us. We are available at any time for your questions or your withdrawal of consent under following address.",
-  "IMPP1" : "We are attorneys under Austrian law and are subject to the applicable professional regulations and rules of conduct of the Vienna Bar Association."
+  "IMPP1" : "We are attorneys under Austrian law and are subject to the applicable professional regulations and rules of conduct of the Vienna Bar Association.",
+  "ANFP1": "Unsere Kanzlei befindet sich im 1. Wiener Gemeindebezirk in der Nähe des Schweden Platz.",
+  "ANFP2": "Sie erreichen uns mit dem Auto oder mit den öffentlichen Verkehrsmitteln.",
+  "ANFP3": "Straßenbahn: Linie 1/2, U-Bahn: U4/U1 - Station ‚Schwedenplatz‘"
 }

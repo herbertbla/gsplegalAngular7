@@ -4,6 +4,7 @@
   "TAETIGKEITSBEREICH": "Tätigkeitsbereiche",
   "INTERNATIONAL": "international",
   "KONTAKT": "Kontakt",
+  "ANFAHRT": "Anfahrt",
   "DEUTSCH": "Deutsch",
   "ENGLISCH": "English",
   "HOMEHEAD": "Herzlich willkommen bei GARGER SPALLINGER Rechtsanwälte GmbH.",
@@ -66,5 +67,8 @@
   "DATP71": "Wir werden Daten nicht länger aufbewahren als dies zur Erfüllung unserer vertraglichen bzw gesetzlichen Verpflichtungen und zur Abwehr allfälliger Haftungsansprüche erforderlich ist. Wir werden diesbezüglich auch die gesetzlichen Aufbewahrungs- und Dokumentationspflichten berücksichtigen.",
   "DATH8": "8. Unsere Kontaktdaten",
   "DATP81": "Der Schutz Ihrer Daten ist uns besonders wichtig. Wir sind für Sie unter den unten angeführten Kontaktdaten jederzeit für Ihre Fragen oder Ihren Widerruf erreichbar.",
-  "IMPP1": "Wir sind Rechtsanwälte nach österreichischem Recht und unterliegen der Aufsicht der Rechtsanwaltskammer Wien sowie dem einschlägigen Standesrecht."
+  "IMPP1": "Wir sind Rechtsanwälte nach österreichischem Recht und unterliegen der Aufsicht der Rechtsanwaltskammer Wien sowie dem einschlägigen Standesrecht.",
+  "ANFP1": "Unsere Kanzlei befindet sich im 1. Wiener Gemeindebezirk in der Nähe des Schweden Platz.",
+  "ANFP2": "Sie erreichen uns mit dem Auto oder mit den öffentlichen Verkehrsmitteln.",
+  "ANFP3": "Straßenbahn: Linie 1/2, U-Bahn: U4/U1 - Station ‚Schwedenplatz‘"
 }
