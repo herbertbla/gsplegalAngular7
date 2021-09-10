@@ -16,6 +16,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { HaftungsausschlussComponent } from './haftungsausschluss/haftungsausschluss.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
