@@ -32,4 +32,7 @@ export class DetailDialogComponent{
     // });
   }
 
+  close() {
+    this.dialog.closeAll();
+  }
 }

@@ -20,6 +20,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DetailDialogComponent} from './utils/detail-dialog/detail-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -52,7 +53,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         ScullyLibModule,
         BrowserAnimationsModule,
         MatDialogModule,
-        MatFormFieldModule
+        MatFormFieldModule,
+        MatCardModule
     ],
     providers: [],
     bootstrap: [AppComponent]
