@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {DetailDialogComponent} from '../utils/detail-dialog/detail-dialog.component';
 import {tap} from 'rxjs/operators';
+import {DetailDialogModel} from "../models/detail.dialog.model";
 
 
 @Component({
@@ -18,16 +19,14 @@ export class TeamComponent implements OnInit {
     ngOnInit() {
     }
 
-    onclick(str: string, event) {
-        const xpos = event.x + 'px';
-        const ypos = event.y + 'px';
+    onclick(id: string, event) {
+        const model = new DetailDialogModel("team-bgarger", "MMag. Dr. Bernhard GARGER", "Rechtsanwalt, Partner", "supserhero");
         this.dialogRef = this.dialog.open(DetailDialogComponent, {
-            position: { top: ypos, left: xpos },
             maxWidth: '100vw',
             maxHeight: '100vw',
-            minWidth: '300px',
-            minHeight: '500px',
-            data: {name: str},
+            data: {
+                model
+            }
         });
         this.dialogRef.afterOpened().pipe(
             tap(() => {

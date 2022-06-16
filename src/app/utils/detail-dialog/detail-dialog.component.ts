@@ -1,38 +1,37 @@
-import {Component, Inject} from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {Component, Inject, Input} from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {DetailDialogModel} from '../../models/detail.dialog.model';
 
 export interface DialogData {
-  animal: string;
-  name: string;
+    animal: string;
+    name: string;
 }
 
 /**
  * @title Dialog Overview
  */
 @Component({
-  selector: 'app-detail-dialog',
-  templateUrl: './detail-dialog.component.html',
-  styleUrls: ['./detail-dialog.component.less']
+    selector: 'app-detail-dialog',
+    templateUrl: './detail-dialog.component.html',
+    styleUrls: ['./detail-dialog.component.less']
 })
-export class DetailDialogComponent{
-  animal: string;
-  name: string;
+export class DetailDialogComponent {
 
-  constructor(public dialog: MatDialog) {}
 
-  openDialog(): void {
-    // const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-    //   width: '250px',
-    //   data: {name: this.name, animal: this.animal},
-    // });
-    //
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log('The dialog was closed');
-    //   this.animal = result;
-    // });
-  }
+    public detailDialogModel: DetailDialogModel;
 
-  close() {
-    this.dialog.closeAll();
-  }
+    constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialog: MatDialog) {
+
+        this.detailDialogModel = data.model;
+        console.log('data: ');
+        console.log(data);
+    }
+
+    openDialog(): void {
+    }
+
+    close() {
+        this.dialog.closeAll();
+    }
 }
+
