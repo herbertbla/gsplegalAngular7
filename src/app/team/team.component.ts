@@ -20,7 +20,7 @@ export class TeamComponent implements OnInit {
     }
 
     onclick(id: string, event) {
-        const model = new DetailDialogModel("team-bgarger", "MMag. Dr. Bernhard GARGER", "Rechtsanwalt, Partner", "supserhero");
+        const model = new DetailDialogModel("team-bgarger", "MMag. Dr. Bernhard GARGER", "Rechtsanwalt, Partner", "BgargerDetailsComponent");
         this.dialogRef = this.dialog.open(DetailDialogComponent, {
             maxWidth: '100vw',
             maxHeight: '100vw',

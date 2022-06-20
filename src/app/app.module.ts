@@ -21,6 +21,7 @@ import {DetailDialogComponent} from './utils/detail-dialog/detail-dialog.compone
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { BgargerDetailsComponent } from './team/details/bgarger-details/bgarger-details.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -37,7 +38,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         ImpressumComponent,
         HaftungsausschlussComponent,
         DatenschutzComponent,
-        DetailDialogComponent
+        DetailDialogComponent,
+        BgargerDetailsComponent
     ],
     imports: [
         BrowserModule,
