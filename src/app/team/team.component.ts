@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
-import {DetailDialogComponent} from '../utils/detail-dialog/detail-dialog.component';
 import {tap} from 'rxjs/operators';
 import {DetailDialogModel} from "../models/detail.dialog.model";
+import {BgargerDialogComponent} from "./details/bgarger-dialog/bgarger-dialog.component";
 
 
 @Component({
@@ -11,7 +11,7 @@ import {DetailDialogModel} from "../models/detail.dialog.model";
     styleUrls: ['./team.component.less']
 })
 export class TeamComponent implements OnInit {
-    private dialogRef: MatDialogRef<DetailDialogComponent, any>;
+    private dialogRef: MatDialogRef<BgargerDialogComponent, any>;
 
     constructor(public dialog: MatDialog) {
     }
@@ -21,7 +21,7 @@ export class TeamComponent implements OnInit {
 
     onclick(id: string, event) {
         const model = new DetailDialogModel("team-bgarger", "MMag. Dr. Bernhard GARGER", "Rechtsanwalt, Partner", "BgargerDetailsComponent");
-        this.dialogRef = this.dialog.open(DetailDialogComponent, {
+        this.dialogRef = this.dialog.open(BgargerDialogComponent, {
             maxWidth: '100vw',
             maxHeight: '100vw',
             data: {

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BgargerDetailsComponent } from './bgarger-details.component';
+import { BgargerDialogComponent } from './bgarger-dialog.component';
 
-describe('BgargerDetailsComponent', () => {
-  let component: BgargerDetailsComponent;
-  let fixture: ComponentFixture<BgargerDetailsComponent>;
+describe('BgargerDialogComponent', () => {
+  let component: BgargerDialogComponent;
+  let fixture: ComponentFixture<BgargerDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BgargerDetailsComponent ]
+      declarations: [ BgargerDialogComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BgargerDetailsComponent);
+    fixture = TestBed.createComponent(BgargerDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
