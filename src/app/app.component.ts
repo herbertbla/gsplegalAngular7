@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -6,7 +6,7 @@ import {TranslateService} from '@ngx-translate/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.less'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
     title = 'gsplegal';
     germanSelected = false;
 
@@ -20,7 +20,7 @@ export class AppComponent {
     };
 
     constructor(private translate: TranslateService) {
-        translate.setDefaultLang('de');
+
     }
 
     openTodo = function () {
@@ -32,5 +32,10 @@ export class AppComponent {
         this.screenWidth = window.innerWidth;
         this.screenHeight = window.innerHeight;
         console.log(this.screenWidth + '/' + this.screenHeight);
+    }
+
+    ngOnInit(): void {
+        this.translate.setDefaultLang('de');
+        this.translate.use('de');
     }
 }

@@ -1,6 +1,6 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
-import {LanguageService} from "../../../services/language.service";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
     selector: 'app-bgarger-dialog',
@@ -11,7 +11,7 @@ export class BgargerDialogComponent implements AfterViewInit {
 
 
     constructor(public dialog: MatDialog,
-                public languageService: LanguageService) {
+                public translateService: TranslateService) {
     }
 
 
@@ -25,7 +25,10 @@ export class BgargerDialogComponent implements AfterViewInit {
 
     ngAfterViewInit(): void {
 
+    }
 
+    isGerman():boolean {
+        return this.translateService.currentLang == 'de';
     }
 
 }

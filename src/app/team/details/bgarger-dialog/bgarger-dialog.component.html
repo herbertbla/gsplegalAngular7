@@ -4,11 +4,11 @@
 
     <div mat-card-avatar class="dialog-header"></div>
     <mat-card-title>MMag. Dr. Bernhard GARGER</mat-card-title>
-    <mat-card-subtitle *ngIf="languageService.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
-    <mat-card-subtitle *ngIf="!languageService.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="!isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content style = "margin-left: 20px; overflow: hidden">
-      <span *ngIf="languageService.isGerman()">
+      <span *ngIf="isGerman()">
         <div class=WordSection1>
 
 
@@ -114,7 +114,7 @@ an der Hochschule St. Gallen (1991-1992)</span></p>
 
 </div>
       </span>
-       <span *ngIf="!languageService.isGerman()">
+       <span *ngIf="!isGerman()">
 
 <div class=WordSection1>
 

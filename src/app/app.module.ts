@@ -21,7 +21,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import { BgargerDialogComponent } from './team/details/bgarger-dialog/bgarger-dialog.component';
-import {LanguageService} from "./services/language.service";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
