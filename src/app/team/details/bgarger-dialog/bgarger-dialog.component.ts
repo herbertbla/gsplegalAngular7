@@ -18,7 +18,7 @@ export class BgargerDialogComponent implements AfterViewInit {
     openDialog(): void {
     }
 
-    close() {
+    onClose() {
         this.dialog.closeAll();
     }
 
