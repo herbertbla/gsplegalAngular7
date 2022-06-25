@@ -1,11 +1,13 @@
-<div mat-dialog-content>
+<div mat-dialog-content #matdialogcontent>
  <mat-card class="dialog-card">
   <mat-card-header>
-    <div mat-card-avatar class="{{detailDialogModel.matCardAvatarClass}}"></div>
-    <mat-card-title>{{detailDialogModel.matCardTitle}}</mat-card-title>
-    <mat-card-subtitle>{{detailDialogModel.matCardSubTitle}}</mat-card-subtitle>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title>MMag. Dr. Bernhard GARGER</mat-card-title>
+    <mat-card-subtitle *ngIf="languageService.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="!languageService.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
       <span *ngIf="languageService.isGerman()">
         <div class=WordSection1>
 
@@ -254,7 +256,6 @@ auditing and tax consulting firm</span></p>
 
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button (click)="close()">close</button>
   </mat-card-actions>
 </mat-card>
 </div>

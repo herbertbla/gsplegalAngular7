@@ -1,6 +1,5 @@
-import {Component, Inject} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialog} from "@angular/material/dialog";
-import {DetailDialogModel} from "../../../models/detail.dialog.model";
+import {AfterViewInit, Component} from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
 import {LanguageService} from "../../../services/language.service";
 
 @Component({
@@ -8,16 +7,12 @@ import {LanguageService} from "../../../services/language.service";
     templateUrl: './bgarger-dialog.component.html',
     styleUrls: ['./bgarger-dialog.component.less']
 })
-export class BgargerDialogComponent {
+export class BgargerDialogComponent implements AfterViewInit {
 
-    public detailDialogModel: DetailDialogModel;
 
-    constructor(@Inject(MAT_DIALOG_DATA) public data: any,
-                public dialog: MatDialog,
-                public languageService : LanguageService) {
-        this.detailDialogModel = data.model;
+    constructor(public dialog: MatDialog,
+                public languageService: LanguageService) {
     }
-
 
 
     openDialog(): void {
@@ -25,6 +20,12 @@ export class BgargerDialogComponent {
 
     close() {
         this.dialog.closeAll();
+    }
+
+
+    ngAfterViewInit(): void {
+
+
     }
 
 }
