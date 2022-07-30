@@ -41,7 +41,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+./.angular
 
 # System Files
 .DS_Store
 Thumbs.db
+/.angular/cache/13.3.7/angular-webpack/6f095731fde2e9a0645840befb31fe9c9a04c17d/0.pack
