@@ -5,7 +5,7 @@
     <div mat-card-avatar class="dialog-header"></div>
     <mat-card-title>
                 MMag. Dr. Bernhard GARGER
-           <button><i class="fa-solid fa-xmark"></i></button>
+           <button (click)="onClose()"><fa-icon [icon]="faXmark"></fa-icon></button>
     </mat-card-title>
     <mat-card-subtitle *ngIf="gpsTS.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
     <mat-card-subtitle *ngIf="!gpsTS.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>

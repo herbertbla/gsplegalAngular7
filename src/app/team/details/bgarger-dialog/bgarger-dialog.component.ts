@@ -1,8 +1,8 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
-import {TranslateService} from "@ngx-translate/core";
-import {Observable} from "rxjs";
 import {GspTranslationServiceService} from "../../../services/gsp-translation-service.service";
+
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-bgarger-dialog',
@@ -10,7 +10,7 @@ import {GspTranslationServiceService} from "../../../services/gsp-translation-se
     styleUrls: ['./bgarger-dialog.component.less']
 })
 export class BgargerDialogComponent implements AfterViewInit {
-
+    faXmark = faXmark;
 
     constructor(public dialog: MatDialog,
                 public gpsTS: GspTranslationServiceService) {
