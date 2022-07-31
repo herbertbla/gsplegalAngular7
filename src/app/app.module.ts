@@ -22,6 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import { BgargerDialogComponent } from './team/details/bgarger-dialog/bgarger-dialog.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -56,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         MatDialogModule,
         MatFormFieldModule,
         MatCardModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        FlexLayoutModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -3,9 +3,11 @@
   <mat-card-header>
 
     <div mat-card-avatar class="dialog-header"></div>
-    <mat-card-title>
-                MMag. Dr. Bernhard GARGER
-           <button (click)="onClose()"><fa-icon [icon]="faXmark"></fa-icon></button>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <span> MMag. Dr. Bernhard GARGER</span>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
     </mat-card-title>
     <mat-card-subtitle *ngIf="gpsTS.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
     <mat-card-subtitle *ngIf="!gpsTS.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>

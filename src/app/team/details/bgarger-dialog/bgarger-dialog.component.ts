@@ -4,6 +4,8 @@ import {GspTranslationServiceService} from "../../../services/gsp-translation-se
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
+import * as $ from 'jquery';
+
 @Component({
     selector: 'app-bgarger-dialog',
     templateUrl: './bgarger-dialog.component.html',
@@ -14,6 +16,7 @@ export class BgargerDialogComponent implements AfterViewInit {
 
     constructor(public dialog: MatDialog,
                 public gpsTS: GspTranslationServiceService) {
+
     }
 
 
@@ -26,7 +29,7 @@ export class BgargerDialogComponent implements AfterViewInit {
 
 
     ngAfterViewInit(): void {
-
+        $.find(".mat-card-header-text")[0].style.width="100%";
     }
 
 
