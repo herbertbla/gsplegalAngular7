@@ -36,7 +36,6 @@
     "bootstrap": "4.5.0",
     "core-js": "^2.5.4",
     "jquery": "^3.6.0",
-    "popper.js": "1.16.0",
     "@popperjs/core": "^2.10.2",
     "puppeteer": "^14.1.1",
     "rxjs": "^6.6.7",
