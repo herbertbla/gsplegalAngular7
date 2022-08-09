@@ -3,6 +3,7 @@ import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {tap} from 'rxjs/operators';
 import {BgargerDialogComponent} from "./details/bgarger-dialog/bgarger-dialog.component";
 import {TemplateComponent} from "./details/template/template.component";
+import {FspallingerDialogComponent} from "./details/fspallinger-dialog/fspallinger-dialog.component";
 
 
 @Component({
@@ -23,9 +24,12 @@ export class TeamComponent implements OnInit {
         let dialogComponent;
         if (dialogId === 'bgarger') {
             dialogComponent = BgargerDialogComponent;
+        } else if (dialogId === 'fspallinger') {
+            dialogComponent = FspallingerDialogComponent;
         } else {
             dialogComponent = TemplateComponent;
         }
+
         this.matDialogRef = this.dialog.open(dialogComponent, {
             maxWidth: '100vw',
             maxHeight: '100vw',
