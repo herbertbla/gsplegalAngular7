@@ -1,0 +1,27 @@
+<div mat-dialog-content #matdialogcontent class="gspmatdialogcontent">
+ <mat-card class="dialog-card">
+  <mat-card-header>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <span> MMag. Dr. Bernhard GARGER</span>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
+    </mat-card-title>
+    <mat-card-subtitle *ngIf="gpsTS.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="!gpsTS.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
+      <span *ngIf="gpsTS.isGerman()">
+          Deutsch
+      </span>
+       <span *ngIf="!gpsTS.isGerman()">
+           Englisch
+
+       </span>
+
+
+  </mat-card-content>
+</mat-card>
+</div>

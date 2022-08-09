@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {tap} from 'rxjs/operators';
 import {BgargerDialogComponent} from "./details/bgarger-dialog/bgarger-dialog.component";
+import {TemplateComponent} from "./details/template/template.component";
 
 
 @Component({
@@ -10,7 +11,7 @@ import {BgargerDialogComponent} from "./details/bgarger-dialog/bgarger-dialog.co
     styleUrls: ['./team.component.less']
 })
 export class TeamComponent implements OnInit {
-    private dialogRef: MatDialogRef<BgargerDialogComponent, any>;
+    private matDialogRef: MatDialogRef<BgargerDialogComponent, any>;
 
     constructor(public dialog: MatDialog) {
     }
@@ -18,14 +19,20 @@ export class TeamComponent implements OnInit {
     ngOnInit() {
     }
 
-    onclick(id: string, event) {
-        this.dialogRef = this.dialog.open(BgargerDialogComponent, {
+    onclick(dialogId: string, event) {
+        let dialogComponent;
+        if (dialogId === 'bgarger') {
+            dialogComponent = BgargerDialogComponent;
+        } else {
+            dialogComponent = TemplateComponent;
+        }
+        this.matDialogRef = this.dialog.open(dialogComponent, {
             maxWidth: '100vw',
             maxHeight: '100vw',
         });
-        this.dialogRef.afterOpened().pipe(
+        this.matDialogRef.afterOpened().pipe(
             tap(() => {
-                console.log(this.dialogRef);
+                console.log(this.matDialogRef);
             })
         ).subscribe(() => {
             console.log('config');

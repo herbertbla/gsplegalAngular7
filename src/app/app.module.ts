@@ -23,6 +23,7 @@ import {MatCardModule} from '@angular/material/card';
 import { BgargerDialogComponent } from './team/details/bgarger-dialog/bgarger-dialog.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { TemplateComponent } from './team/details/template/template.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -40,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         HaftungsausschlussComponent,
         DatenschutzComponent,
         BgargerDialogComponent,
+        TemplateComponent,
     ],
     imports: [
         BrowserModule,
