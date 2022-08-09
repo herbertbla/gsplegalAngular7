@@ -25,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { TemplateComponent } from './team/details/template/template.component';
 import { FspallingerDialogComponent } from './team/details/fspallinger-dialog/fspallinger-dialog.component';
+import { PsteindlDialogComponent } from './team/details/psteindl-dialog/psteindl-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -44,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         BgargerDialogComponent,
         TemplateComponent,
         FspallingerDialogComponent,
+        PsteindlDialogComponent,
     ],
     imports: [
         BrowserModule,

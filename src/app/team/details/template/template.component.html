@@ -5,19 +5,72 @@
     <div mat-card-avatar class="dialog-header"></div>
     <mat-card-title style = "width: 100%">
         <span  fxLayout="row" fxLayoutAlign="space-between center">
-            <span> MMag. Dr. Bernhard GARGER</span>
+            <p class=MsoNormalIndent><span lang=EN-US
+                                           style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#004439'>Patrick STEINDL, LL.M. (WU)</span></p>
             <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
         </span>
     </mat-card-title>
-    <mat-card-subtitle *ngIf="gpsTS.isGerman()">Rechtsanwalt, Partner</mat-card-subtitle>
-    <mat-card-subtitle *ngIf="!gpsTS.isGerman()">Attorney-at-Law / Rechtsanwalt, Partner</mat-card-subtitle>
+       <mat-card-subtitle *ngIf="gpsTS.isGerman()">Rechtsanwalt</mat-card-subtitle>
+    <mat-card-subtitle *ngIf="!gpsTS.isGerman()">Attorney-at-Law / Rechtsanwalt</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content style = "margin-left: 20px; overflow: hidden">
       <span *ngIf="gpsTS.isGerman()">
-          Deutsch
+
+<div class=WordSection1>
+
+
+
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.0cm'><b><span lang=DE-AT style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>E</span></b><span lang=DE-AT
+                                                       style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+     <a href="mailto:psteindl@gsplegal.at" class="gspkontakt"> psteindl(AT)gsplegal.at </a>
+    </span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.0cm'><b><span lang=DE-AT style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>T</span></b><span lang=DE-AT
+                                                       style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+     <a class="gspkontakt" href="tel:+43-1-319-94-70"> +43 1 319 94 70</a>
+    </span></p>
+
+<p class=MsoNormalIndent style='margin-left:1.0cm'><b><span lang=DE-AT
+                                                            style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>F </span></b><span
+        lang=DE-AT style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+     <a class="gspkontakt" href="tel:+43-1-319-94-70-70"> +43 1 319 94 70-70</a>
+    </span></p>
+Deutsch
+</div>
       </span>
        <span *ngIf="!gpsTS.isGerman()">
-           Englisch
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.0cm'><b><span lang=DE-AT style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>E</span></b><span lang=DE-AT
+                                                       style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+      <a href="mailto:psteindl@gsplegal.at" class="gspkontakt"> psteindl(AT)gsplegal.at </a>
+</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.0cm'><b><span lang=DE-AT style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>T</span></b><span lang=DE-AT
+                                                       style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+     <a class="gspkontakt" href="tel:+43-1-319-94-70"> +43 1 319 94 70</a>
+    </span></p>
+
+<p class=MsoNormalIndent style='margin-left:1.0cm'><b><span lang=DE-AT
+                                                            style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>F </span></b><span
+        lang=DE-AT style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>
+     <a class="gspkontakt" href="tel:+43-1-319-94-70-70"> +43 1 319 94 70-70</a>
+  </span></p>
+
+    Englisch
+
+</div>
 
        </span>
 

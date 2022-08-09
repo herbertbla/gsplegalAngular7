@@ -4,6 +4,7 @@ import {tap} from 'rxjs/operators';
 import {BgargerDialogComponent} from "./details/bgarger-dialog/bgarger-dialog.component";
 import {TemplateComponent} from "./details/template/template.component";
 import {FspallingerDialogComponent} from "./details/fspallinger-dialog/fspallinger-dialog.component";
+import {PsteindlDialogComponent} from "./details/psteindl-dialog/psteindl-dialog.component";
 
 
 @Component({
@@ -26,6 +27,8 @@ export class TeamComponent implements OnInit {
             dialogComponent = BgargerDialogComponent;
         } else if (dialogId === 'fspallinger') {
             dialogComponent = FspallingerDialogComponent;
+        }  else if (dialogId === 'psteindl') {
+            dialogComponent = PsteindlDialogComponent;
         } else {
             dialogComponent = TemplateComponent;
         }
