@@ -17,8 +17,48 @@
     <div class="row ">
       <div class="col-md-1"></div>
       <div class="col-md-8 ">
-        <p>{{'TEAMP1' | translate}} </p>
-        <p>{{'TEAMP2' | translate}} </p>
+        <span *ngIf="gpsTS.isGerman()">
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span lang=DE-AT
+                                                         style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>&quot;<b><i>Die
+Stärke des Teams ist jedes einzelne Mitglied. Die Stärke eines jeden Mitglieds
+ist das Team.</i></b>&quot; (Phil Jackson)</span></p>
+
+<p class=MsoNormalIndent><span lang=DE-AT
+                                                         style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Mit
+unserem Team von Spezialisten mit langjähriger Erfahrung und unterschiedlichen
+persönlichen und beruflichen Hintergründen bieten wir eine eine <b>vielschichtige
+sowie effiziente und professionelle rechtliche Beratung</b>. Gemeinsam ist uns
+das <b>Interesse an den geschäftlichen Tätigkeiten unserer Mandanten</b> und
+dem <b>Verständnis zur Schaffung maßgeschneiderter Lösungen</b>.</span></p>
+
+<p class=MsoNormal><span lang=DE-AT>&nbsp;</span></p>
+
+</div>
+        </span>
+        <span *ngIf="!gpsTS.isGerman()">
+          
+          <div class=WordSection1>
+
+<p class=MsoNormalIndent ><span lang=EN-US
+                                                         style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>&quot;<b><i>The
+strength of the team is each individual member. The strength of each member is
+the team.</i></b>&quot; (Phil Jackson)</span></p>
+
+<p class=MsoNormalIndent ><span lang=EN-US
+                                                         style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>With
+our team of specialists with many years of experience and different personal
+and professional backgrounds, we offer a <b>multi-faceted as well as efficient
+and professional legal advice</b>. What we have in common is <b>the interest in
+our clients' business activities</b> and the <b>understanding to create
+tailor-made solutions</b>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+        </span>
       </div>
     </div>
   </div>
