@@ -22,28 +22,27 @@ export class TeamComponent implements OnInit {
     }
 
     onclick(dialogId: string, event) {
-        let dialogComponent;
+        let dialogComponent = null;
         if (dialogId === 'bgarger') {
             dialogComponent = BgargerDialogComponent;
         } else if (dialogId === 'fspallinger') {
             dialogComponent = FspallingerDialogComponent;
         }  else if (dialogId === 'psteindl') {
             dialogComponent = PsteindlDialogComponent;
-        } else {
-            dialogComponent = TemplateComponent;
         }
+        if (!!dialogComponent) {
 
-        this.matDialogRef = this.dialog.open(dialogComponent, {
-            maxWidth: '100vw',
-            maxHeight: '100vw',
-        });
-        this.matDialogRef.afterOpened().pipe(
-            tap(() => {
-                console.log(this.matDialogRef);
-            })
-        ).subscribe(() => {
-            console.log('config');
-        });
-
+            this.matDialogRef = this.dialog.open(dialogComponent, {
+                maxWidth: '100vw',
+                maxHeight: '100vw',
+            });
+            this.matDialogRef.afterOpened().pipe(
+                tap(() => {
+                    console.log(this.matDialogRef);
+                })
+            ).subscribe(() => {
+                console.log('config');
+            });
+        }
     }
 }
