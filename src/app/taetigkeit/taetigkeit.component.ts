@@ -10,6 +10,7 @@ import {GlobalmobilityDialogComponent} from "./details/globalmobility-dialog/glo
 import {BankenDialogComponent} from "./details/banken-dialog/banken-dialog.component";
 import {VertragDialogComponent} from "./details/vertrag-dialog/vertrag-dialog.component";
 import {OeffentlichesrechtDialogComponent} from "./details/oeffentlichesrecht-dialog/oeffentlichesrecht-dialog.component";
+import {ImmobilienDialogComponent} from "./details/immobilien-dialog/immobilien-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -44,6 +45,8 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = VertragDialogComponent;
     } else if (dialogId === 'oeffentlichesrecht') {
       dialogComponent = OeffentlichesrechtDialogComponent;
+    } else if (dialogId === 'immobilien') {
+      dialogComponent = ImmobilienDialogComponent;
     }
     if (!!dialogComponent) {
 

@@ -1,0 +1,145 @@
+<div mat-dialog-content #matdialogcontent class="gspmatdialogcontent">
+ <mat-card class="dialog-card">
+  <mat-card-header>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <p class=MsoNormalIndent><span lang=EN-US
+                                           style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#004439'>   <span> {{'IMMOBILIENRECHT' | translate | uppercase}}</span></span></p>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
+      <span *ngIf="gpsTS.isGerman()">
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span style='font-size:12.0pt;line-height:115%;
+font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman"'>Immobilientransaktionen
+können in vielen verschiedenen Ausgestaltungsvarianten erfolgen und tangieren
+eine Vielzahl unterschiedlicher Rechtsbereiche. Durch unsere Expertise und die
+langjährige Erfahrung bieten wir Ihnen die hierfür notwendige rechtliche Unterstützung,
+sei es im Zusammenhang mit Betriebsvermögen, einem Privatverkauf oder einer
+Anschaffung zur Eigennutzung oder auch als reine Geldanlage.</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        style='font-size:12.0pt;line-height:115%;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>Strukturierung und Ausarbeitung von
+Immobilienkauf- und -<span class=SpellE>verkaufsverträgen</span></span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        style='font-size:12.0pt;line-height:115%;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>Ausfertigung von Immobilienkaufverträgen,
+Anmeldungen beim Grundbuch</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>Alle <span class=SpellE>Formen</span> von <span
+        class=SpellE>Treuhandvereinbarungen</span> </span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        style='font-size:12.0pt;line-height:115%;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>Rechtsberatung in allen
+immobilienrechtlichen Fragen</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        style='font-size:12.0pt;line-height:115%;font-family:Wingdings;mso-fareast-font-family:
+Wingdings;mso-bidi-font-family:Wingdings'><span style='mso-list:Ignore'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman"'>Umfassende Begleitung von
+Immobilien-Projekten</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+      </span>
+       <span *ngIf="!gpsTS.isGerman()">
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>Real estate transactions can take many different forms
+and affect a variety of different legal areas. Thanks to our expertise and many
+years of experience, we can provide you with the necessary legal support,
+whether in connection with business assets, a private <span class=GramE>sale</span>
+or an acquisition for personal use, or even as a pure financial investment.</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>Structuring and drafting of real-estate purchase/sales
+contracts</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>Execution of real-estate purchase contracts,
+applications to the Real-Estate Register</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;mso-ansi-language:
+EN-US'><span style='mso-list:Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>All forms of trustee (escrow) arrangements</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings;mso-ansi-language:EN-US'><span style='mso-list:
+Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>Legal advice on
+all issues relating to real-estate law</span><span lang=EN-US style='mso-ansi-language:
+EN-US'></span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo1'><span
+        lang=EN-US style='font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings;mso-ansi-language:EN-US'><span style='mso-list:
+Ignore'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><span
+        lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US'>Comprehensive
+support of real estate projects</span><span lang=EN-US style='mso-ansi-language:
+EN-US'></span></p>
+
+</div>
+
+       </span>
+
+
+  </mat-card-content>
+</mat-card>
+</div>
