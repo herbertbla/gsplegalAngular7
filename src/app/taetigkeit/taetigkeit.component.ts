@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
+import {GspTranslationServiceService} from "../services/gsp-translation-service.service";
+import {TemplateComponent} from "./details/template/template.component";
+import {GesellschaftsrechtDialogComponent} from "./details/gesellschaftsrecht-dialog/gesellschaftsrecht-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -6,11 +10,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./taetigkeit.component.less']
 })
 export class TaetigkeitComponent implements OnInit {
+  private matDialogRef: MatDialogRef<any, any>;
 
-  constructor() { }
+  constructor(public dialog: MatDialog,
+              public gpsTS: GspTranslationServiceService) { }
 
   ngOnInit() {
-    console.log('TaetigkeitComponente');
   }
 
+
+  onclick(dialogId: string) {
+    let dialogComponent = TemplateComponent;
+    if (dialogId === 'gesellschaftsrecht') {
+      dialogComponent = GesellschaftsrechtDialogComponent;
+    } else if (dialogId === 'fspallinger') {
+    }  else if (dialogId === 'psteindl') {
+    }
+    if (!!dialogComponent) {
+
+      this.matDialogRef = this.dialog.open(dialogComponent, {
+        maxWidth: '100vw',
+        maxHeight: '100vw',
+      });
+    }
+  }
 }

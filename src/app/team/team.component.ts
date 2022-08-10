@@ -13,7 +13,7 @@ import {GspTranslationServiceService} from "../services/gsp-translation-service.
     styleUrls: ['./team.component.less']
 })
 export class TeamComponent implements OnInit {
-    private matDialogRef: MatDialogRef<BgargerDialogComponent, any>;
+    private matDialogRef: MatDialogRef<any, any>;
 
     constructor(public dialog: MatDialog,
                 public gpsTS: GspTranslationServiceService) {

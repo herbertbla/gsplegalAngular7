@@ -1,0 +1,26 @@
+<div mat-dialog-content #matdialogcontent class="gspmatdialogcontent">
+ <mat-card class="dialog-card">
+  <mat-card-header>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <p class=MsoNormalIndent><span lang=EN-US
+                                           style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#004439'>Gesellschaftsrecht</span></p>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
+      <span *ngIf="gpsTS.isGerman()">
+Deutsch
+      </span>
+       <span *ngIf="!gpsTS.isGerman()">
+Englisch
+       </span>
+
+
+  </mat-card-content>
+</mat-card>
+</div>
