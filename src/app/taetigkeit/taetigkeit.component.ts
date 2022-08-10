@@ -5,6 +5,7 @@ import {TemplateComponent} from "./details/template/template.component";
 import {GesellschaftsrechtDialogComponent} from "./details/gesellschaftsrecht-dialog/gesellschaftsrecht-dialog.component";
 import {UmgruendungenDialogComponent} from "./details/umgruendungen-dialog/umgruendungen-dialog.component";
 import {MergersDialogComponent} from "./details/mergers-dialog/mergers-dialog.component";
+import {ArbeitsrechtDialogComponent} from "./details/arbeitsrecht-dialog/arbeitsrecht-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -29,6 +30,8 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = UmgruendungenDialogComponent;
     }  else if (dialogId === 'mergers') {
       dialogComponent = MergersDialogComponent;
+    } else if (dialogId === 'arbeitsrecht') {
+      dialogComponent = ArbeitsrechtDialogComponent;
     }
     if (!!dialogComponent) {
 
