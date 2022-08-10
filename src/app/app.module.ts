@@ -33,6 +33,7 @@ import { ArbeitsrechtDialogComponent } from './taetigkeit/details/arbeitsrecht-d
 import { GlobalmobilityDialogComponent } from './taetigkeit/details/globalmobility-dialog/globalmobility-dialog.component';
 import { BankenDialogComponent } from './taetigkeit/details/banken-dialog/banken-dialog.component';
 import { VertragDialogComponent } from './taetigkeit/details/vertrag-dialog/vertrag-dialog.component';
+import { OeffentlichesrechtDialogComponent } from './taetigkeit/details/oeffentlichesrecht-dialog/oeffentlichesrecht-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -60,6 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         GlobalmobilityDialogComponent,
         BankenDialogComponent,
         VertragDialogComponent,
+        OeffentlichesrechtDialogComponent,
     ],
     imports: [
         BrowserModule,

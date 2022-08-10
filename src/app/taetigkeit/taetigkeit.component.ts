@@ -9,6 +9,7 @@ import {ArbeitsrechtDialogComponent} from "./details/arbeitsrecht-dialog/arbeits
 import {GlobalmobilityDialogComponent} from "./details/globalmobility-dialog/globalmobility-dialog.component";
 import {BankenDialogComponent} from "./details/banken-dialog/banken-dialog.component";
 import {VertragDialogComponent} from "./details/vertrag-dialog/vertrag-dialog.component";
+import {OeffentlichesrechtDialogComponent} from "./details/oeffentlichesrecht-dialog/oeffentlichesrecht-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -39,8 +40,10 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = GlobalmobilityDialogComponent;
     } else if (dialogId === 'banken') {
       dialogComponent = BankenDialogComponent;
-    }else if (dialogId === 'vertrag') {
+    } else if (dialogId === 'vertrag') {
       dialogComponent = VertragDialogComponent;
+    } else if (dialogId === 'oeffentlichesrecht') {
+      dialogComponent = OeffentlichesrechtDialogComponent;
     }
     if (!!dialogComponent) {
 
