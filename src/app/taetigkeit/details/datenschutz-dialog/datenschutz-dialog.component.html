@@ -1,0 +1,150 @@
+<div mat-dialog-content #matdialogcontent class="gspmatdialogcontent">
+ <mat-card class="dialog-card">
+  <mat-card-header>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <p class=MsoNormalIndent><span lang=EN-US
+                                           style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#004439'>   <span> {{'DATENSCHUTZIPIT' | translate | uppercase}}</span></span></p>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
+      <span *ngIf="gpsTS.isGerman()">
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span lang=DE-AT style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>Der Schutz von personenbezogenen Daten kommt,
+nicht zuletzt auch aufgrund der seit 25. Mai 2018 in Geltung stehenden
+Datenschutz-Grundverordnung, eine bedeutende Rolle im Unternehmensgefüge zu. Die
+drohenden hohen Strafen bei Verstößen gegen Datenschutzbestimmungen machen
+einen gesetzeskonformen Umgang mit Kunden-, Mitarbeiter- und Lieferantendaten unumgänglich.
+Daneben stellen Marken-, Patent- und Urheberrechte als geistiges Eigentum einen
+beträchtlichen Wert für Unternehmen dar. Dies insbesondere auch im Zusammenhang
+mit IT-Unternehmen und von diesen entwickelten Technologien. Ein entsprechender
+Schutz, eine rechtssichere Lizensierung und die wirksame Verteidigung des
+geistigen Eigentums kommt dabei eine entscheidende Bedeutung zu. Gerne
+unterstützen und beraten wir Sie durch unsere Expertise und Erfahrung umfassend
+in diesbezüglichen Belangen.</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Datenschutzerklärungen,
+Einwilligungserklärungen und sonstigen datenschutzrechtlichen Dokumenten</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Auftragsverarbeiterverträge
+und Verträge gemeinsamer Verantwortlicher</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>grenzüberschreitenden
+Datentransfers</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Registrierungen
+von Marken</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Lizenzverträge</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Verteidigung
+von geistigem Eigentum</span></p>
+
+<p class=MsoNormal><span lang=DE-AT>&nbsp;</span></p>
+
+</div>
+
+
+      </span>
+       <span *ngIf="!gpsTS.isGerman()">
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif'>The protection of personal data plays an
+important role in the corporate structure, especially due to the General Data
+Protection Regulation, which has been in force since May 25, 2018. The threat
+of high penalties for violations of data protection regulations makes it
+essential to handle customer, employee and supplier data in compliance with the
+law. In addition, trademarks, patents and copyrights as intellectual property
+represent a considerable value for companies. This is especially true in
+connection with IT companies and the technologies they have developed. Appropriate
+protection, legally secure licensing and effective defense of intellectual
+property are of crucial importance. We will be pleased to provide you with
+comprehensive support and advice in these matters based on our expertise and
+experience.</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=EN-US
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Data
+protection declarations, consent forms and other data protection documents</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=EN-US
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Data
+processor and joint controller contracts</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Cross-border
+data transfers</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Trademark
+registrations</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>License
+agreements</span></p>
+
+<p class=MsoNormalIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:64.05pt;text-indent:-17.85pt'><span lang=DE-AT
+                                                    style='font-size:12.0pt;line-height:115%;font-family:Wingdings'>§<span
+        style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=DE-AT
+                                                                        style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif'>Intellectual
+property defense</span></p>
+
+<p class=MsoNormal><span lang=DE-AT>&nbsp;</span></p>
+
+</div>
+
+       </span>
+
+
+  </mat-card-content>
+</mat-card>
+</div>

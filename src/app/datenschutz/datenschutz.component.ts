@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {GspTranslationServiceService} from "../services/gsp-translation-service.service";
 
 @Component({
   selector: 'app-datenschutz',
@@ -8,7 +7,7 @@ import {GspTranslationServiceService} from "../services/gsp-translation-service.
 })
 export class DatenschutzComponent implements OnInit {
 
-  constructor( public gpsTS: GspTranslationServiceService) { }
+  constructor() { }
 
   ngOnInit() {
   }

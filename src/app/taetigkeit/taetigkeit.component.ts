@@ -11,6 +11,7 @@ import {BankenDialogComponent} from "./details/banken-dialog/banken-dialog.compo
 import {VertragDialogComponent} from "./details/vertrag-dialog/vertrag-dialog.component";
 import {OeffentlichesrechtDialogComponent} from "./details/oeffentlichesrecht-dialog/oeffentlichesrecht-dialog.component";
 import {ImmobilienDialogComponent} from "./details/immobilien-dialog/immobilien-dialog.component";
+import {DatenschutzDialogComponent} from "./details/datenschutz-dialog/datenschutz-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -47,6 +48,8 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = OeffentlichesrechtDialogComponent;
     } else if (dialogId === 'immobilien') {
       dialogComponent = ImmobilienDialogComponent;
+    } else if (dialogId === 'datenschutz') {
+      dialogComponent = DatenschutzDialogComponent;
     }
     if (!!dialogComponent) {
 

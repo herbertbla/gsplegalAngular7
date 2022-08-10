@@ -35,6 +35,7 @@ import { BankenDialogComponent } from './taetigkeit/details/banken-dialog/banken
 import { VertragDialogComponent } from './taetigkeit/details/vertrag-dialog/vertrag-dialog.component';
 import { OeffentlichesrechtDialogComponent } from './taetigkeit/details/oeffentlichesrecht-dialog/oeffentlichesrecht-dialog.component';
 import { ImmobilienDialogComponent } from './taetigkeit/details/immobilien-dialog/immobilien-dialog.component';
+import { DatenschutzDialogComponent } from './taetigkeit/details/datenschutz-dialog/datenschutz-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -64,6 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         VertragDialogComponent,
         OeffentlichesrechtDialogComponent,
         ImmobilienDialogComponent,
+        DatenschutzDialogComponent,
     ],
     imports: [
         BrowserModule,
