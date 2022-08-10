@@ -1,0 +1,50 @@
+<div mat-dialog-content #matdialogcontent class="gspmatdialogcontent">
+ <mat-card class="dialog-card">
+  <mat-card-header>
+
+    <div mat-card-avatar class="dialog-header"></div>
+    <mat-card-title style = "width: 100%">
+        <span  fxLayout="row" fxLayoutAlign="space-between center">
+            <p class=MsoNormalIndent><span lang=EN-US
+                                           style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#004439'>   <span> {{'GLOBALMOBILITY' | translate | uppercase}}</span></span></p>
+            <span> <button (click)="onClose()" class="normal" [title]="gpsTS.isGerman()?'schliessen' : 'close'"><fa-icon  size="xs" [icon]="faXmark"></fa-icon></button> </span>
+        </span>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content style = "margin-left: 20px; overflow: hidden">
+      <span *ngIf="gpsTS.isGerman()">
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span style='font-size:12.0pt;line-height:115%;
+font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman"'>Grenzüberschreitende
+Tätigkeiten von Unternehmen erfordern fundierte Beratung insbesondere auch im
+Bereich der Arbeitnehmerentsendung und -überlassung sowie des Niederlassungs-
+und Aufenthaltsrechts. Mit unserer Expertise unterstützen wir Sie gerne bei der
+Umsetzung diesbezüglicher Vorhaben. </span></p>
+
+<p class=MsoNormal></p>
+</div>
+      </span>
+       <span *ngIf="!gpsTS.isGerman()">
+
+<div class=WordSection1>
+
+<p class=MsoNormalIndent><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Arial",sans-serif;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US'>Cross-border activities of companies require
+well-founded advice, especially <span class=GramE>in the area of</span> posting
+employees and personnel leasing as well as the right of establishment and
+residence. With our expertise, we are happy to support you in the
+implementation of projects in this regard.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'></span></p>
+
+</div>
+       </span>
+
+
+  </mat-card-content>
+</mat-card>
+</div>
