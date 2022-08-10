@@ -27,6 +27,7 @@ import { FspallingerDialogComponent } from './team/details/fspallinger-dialog/fs
 import { PsteindlDialogComponent } from './team/details/psteindl-dialog/psteindl-dialog.component';
 import { GesellschaftsrechtDialogComponent } from './taetigkeit/details/gesellschaftsrecht-dialog/gesellschaftsrecht-dialog.component';
 import {TemplateComponent} from "./taetigkeit/details/template/template.component";
+import { UmgruendungenDialogComponent } from './taetigkeit/details/umgruendungen-dialog/umgruendungen-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -48,6 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         FspallingerDialogComponent,
         PsteindlDialogComponent,
         GesellschaftsrechtDialogComponent,
+        UmgruendungenDialogComponent,
     ],
     imports: [
         BrowserModule,
