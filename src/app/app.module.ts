@@ -28,6 +28,7 @@ import { PsteindlDialogComponent } from './team/details/psteindl-dialog/psteindl
 import { GesellschaftsrechtDialogComponent } from './taetigkeit/details/gesellschaftsrecht-dialog/gesellschaftsrecht-dialog.component';
 import {TemplateComponent} from "./taetigkeit/details/template/template.component";
 import { UmgruendungenDialogComponent } from './taetigkeit/details/umgruendungen-dialog/umgruendungen-dialog.component';
+import { MergersDialogComponent } from './taetigkeit/details/mergers-dialog/mergers-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -50,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         PsteindlDialogComponent,
         GesellschaftsrechtDialogComponent,
         UmgruendungenDialogComponent,
+        MergersDialogComponent,
     ],
     imports: [
         BrowserModule,

@@ -4,6 +4,7 @@ import {GspTranslationServiceService} from "../services/gsp-translation-service.
 import {TemplateComponent} from "./details/template/template.component";
 import {GesellschaftsrechtDialogComponent} from "./details/gesellschaftsrecht-dialog/gesellschaftsrecht-dialog.component";
 import {UmgruendungenDialogComponent} from "./details/umgruendungen-dialog/umgruendungen-dialog.component";
+import {MergersDialogComponent} from "./details/mergers-dialog/mergers-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -26,7 +27,8 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = GesellschaftsrechtDialogComponent;
     } else if (dialogId === 'umgruendungen') {
       dialogComponent = UmgruendungenDialogComponent;
-    }  else if (dialogId === 'psteindl') {
+    }  else if (dialogId === 'mergers') {
+      dialogComponent = MergersDialogComponent;
     }
     if (!!dialogComponent) {
 
