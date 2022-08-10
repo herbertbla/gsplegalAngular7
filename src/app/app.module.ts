@@ -31,6 +31,7 @@ import { UmgruendungenDialogComponent } from './taetigkeit/details/umgruendungen
 import { MergersDialogComponent } from './taetigkeit/details/mergers-dialog/mergers-dialog.component';
 import { ArbeitsrechtDialogComponent } from './taetigkeit/details/arbeitsrecht-dialog/arbeitsrecht-dialog.component';
 import { GlobalmobilityDialogComponent } from './taetigkeit/details/globalmobility-dialog/globalmobility-dialog.component';
+import { BankenDialogComponent } from './taetigkeit/details/banken-dialog/banken-dialog.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -56,6 +57,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         MergersDialogComponent,
         ArbeitsrechtDialogComponent,
         GlobalmobilityDialogComponent,
+        BankenDialogComponent,
     ],
     imports: [
         BrowserModule,
