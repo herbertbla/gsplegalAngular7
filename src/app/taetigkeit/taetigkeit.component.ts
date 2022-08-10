@@ -8,6 +8,7 @@ import {MergersDialogComponent} from "./details/mergers-dialog/mergers-dialog.co
 import {ArbeitsrechtDialogComponent} from "./details/arbeitsrecht-dialog/arbeitsrecht-dialog.component";
 import {GlobalmobilityDialogComponent} from "./details/globalmobility-dialog/globalmobility-dialog.component";
 import {BankenDialogComponent} from "./details/banken-dialog/banken-dialog.component";
+import {VertragDialogComponent} from "./details/vertrag-dialog/vertrag-dialog.component";
 
 @Component({
   selector: 'app-taetigkeit',
@@ -38,6 +39,8 @@ export class TaetigkeitComponent implements OnInit {
       dialogComponent = GlobalmobilityDialogComponent;
     } else if (dialogId === 'banken') {
       dialogComponent = BankenDialogComponent;
+    }else if (dialogId === 'vertrag') {
+      dialogComponent = VertragDialogComponent;
     }
     if (!!dialogComponent) {
 
