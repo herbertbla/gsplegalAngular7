@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-banken-dialog',
   templateUrl: './banken-dialog.component.html',
-  styleUrls: ['./banken-dialog.component.less']
+  styleUrls: ['./banken-dialog.component.scss']
 })
 export class BankenDialogComponent implements AfterViewInit {
 

@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-gesellschaftsrecht-dialog',
   templateUrl: './gesellschaftsrecht-dialog.component.html',
-  styleUrls: ['./gesellschaftsrecht-dialog.component.less']
+  styleUrls: ['./gesellschaftsrecht-dialog.component.scss']
 })
 export class GesellschaftsrechtDialogComponent implements AfterViewInit {
 

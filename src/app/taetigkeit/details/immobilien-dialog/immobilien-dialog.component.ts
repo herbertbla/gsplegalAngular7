@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-immobilien-dialog',
   templateUrl: './immobilien-dialog.component.html',
-  styleUrls: ['./immobilien-dialog.component.less']
+  styleUrls: ['./immobilien-dialog.component.scss']
 })
 export class ImmobilienDialogComponent implements AfterViewInit {
 

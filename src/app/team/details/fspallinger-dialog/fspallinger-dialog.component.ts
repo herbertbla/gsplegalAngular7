@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-fspallinger-dialog',
   templateUrl: './fspallinger-dialog.component.html',
-  styleUrls: ['./fspallinger-dialog.component.less']
+  styleUrls: ['./fspallinger-dialog.component.scss']
 })
 export class FspallingerDialogComponent  implements AfterViewInit {
   faXmark = faXmark;

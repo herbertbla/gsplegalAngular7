@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-template',
   templateUrl: './template.component.html',
-  styleUrls: ['./template.component.less']
+  styleUrls: ['./template.component.scss']
 })
 export class TemplateComponent implements AfterViewInit {
   faXmark = faXmark;

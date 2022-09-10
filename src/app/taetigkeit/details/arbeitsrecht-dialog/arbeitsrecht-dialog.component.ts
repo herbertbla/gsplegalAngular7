@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-arbeitsrecht-dialog',
   templateUrl: './arbeitsrecht-dialog.component.html',
-  styleUrls: ['./arbeitsrecht-dialog.component.less']
+  styleUrls: ['./arbeitsrecht-dialog.component.scss']
 })
 export class ArbeitsrechtDialogComponent implements AfterViewInit {
 

@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-oeffentlichesrecht-dialog',
   templateUrl: './oeffentlichesrecht-dialog.component.html',
-  styleUrls: ['./oeffentlichesrecht-dialog.component.less']
+  styleUrls: ['./oeffentlichesrecht-dialog.component.scss']
 })
 export class OeffentlichesrechtDialogComponent implements AfterViewInit {
 

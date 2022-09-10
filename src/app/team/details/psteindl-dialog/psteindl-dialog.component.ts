@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-psteindl-dialog',
   templateUrl: './psteindl-dialog.component.html',
-  styleUrls: ['./psteindl-dialog.component.less']
+  styleUrls: ['./psteindl-dialog.component.scss']
 })
 export class PsteindlDialogComponent implements AfterViewInit {
   faXmark = faXmark;

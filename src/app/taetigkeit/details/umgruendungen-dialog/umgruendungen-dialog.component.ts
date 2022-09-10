@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-umgruendungen-dialog',
   templateUrl: './umgruendungen-dialog.component.html',
-  styleUrls: ['./umgruendungen-dialog.component.less']
+  styleUrls: ['./umgruendungen-dialog.component.scss']
 })
 export class UmgruendungenDialogComponent implements AfterViewInit {
 

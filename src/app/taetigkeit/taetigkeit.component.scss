@@ -1,0 +1,35 @@
+@import "../app.component.scss";
+
+.gsptateigkeitsbereichheader {
+  height: 450px;
+  background-image: url("../../assets/images/header/header_taetigkeitsbereiche.jpg");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+
+.gsptaetigkeitcontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.gsptaetigkeitbottomcentered {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  bottom:0px;
+  background-color: rgb(97,96,85);
+  opacity: 0.7;
+  color: white;
+}
+
+.gsptitlefonttaetigkeit{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  color: white;
+  padding-top: 30px;
+}
+

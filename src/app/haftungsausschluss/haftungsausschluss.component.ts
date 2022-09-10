@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-haftungsausschluss',
   templateUrl: './haftungsausschluss.component.html',
-  styleUrls: ['./haftungsausschluss.component.less']
+  styleUrls: ['./haftungsausschluss.component.scss']
 })
 export class HaftungsausschlussComponent implements OnInit {
 

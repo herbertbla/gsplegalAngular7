@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-vertrag-dialog',
   templateUrl: './vertrag-dialog.component.html',
-  styleUrls: ['./vertrag-dialog.component.less']
+  styleUrls: ['./vertrag-dialog.component.scss']
 })
 export class VertragDialogComponent  implements AfterViewInit {
 

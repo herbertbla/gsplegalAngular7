@@ -16,7 +16,7 @@ import {DatenschutzDialogComponent} from "./details/datenschutz-dialog/datenschu
 @Component({
   selector: 'app-taetigkeit',
   templateUrl: './taetigkeit.component.html',
-  styleUrls: ['./taetigkeit.component.less']
+  styleUrls: ['./taetigkeit.component.scss']
 })
 export class TaetigkeitComponent implements OnInit {
   private matDialogRef: MatDialogRef<any, any>;

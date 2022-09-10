@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-datenschutz-dialog',
   templateUrl: './datenschutz-dialog.component.html',
-  styleUrls: ['./datenschutz-dialog.component.less']
+  styleUrls: ['./datenschutz-dialog.component.scss']
 })
 export class DatenschutzDialogComponent  implements AfterViewInit {
 

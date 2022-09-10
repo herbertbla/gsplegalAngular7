@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 @Component({
     selector: 'app-bgarger-dialog',
     templateUrl: './bgarger-dialog.component.html',
-    styleUrls: ['./bgarger-dialog.component.less']
+    styleUrls: ['./bgarger-dialog.component.scss']
 })
 export class BgargerDialogComponent implements AfterViewInit {
     faXmark = faXmark;

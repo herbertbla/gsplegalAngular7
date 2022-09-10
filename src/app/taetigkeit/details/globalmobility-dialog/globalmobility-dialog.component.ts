@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-globalmobility-dialog',
   templateUrl: './globalmobility-dialog.component.html',
-  styleUrls: ['./globalmobility-dialog.component.less']
+  styleUrls: ['./globalmobility-dialog.component.scss']
 })
 export class GlobalmobilityDialogComponent implements AfterViewInit {
 

@@ -10,7 +10,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-mergers-dialog',
   templateUrl: './mergers-dialog.component.html',
-  styleUrls: ['./mergers-dialog.component.less']
+  styleUrls: ['./mergers-dialog.component.scss']
 })
 export class MergersDialogComponent implements AfterViewInit {
 
