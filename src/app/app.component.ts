@@ -9,7 +9,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent implements OnInit {
   title = 'gsplegal';
   germanSelected = false;
-
+  collapse = true;
 
   public screenWidth: any;
   public screenHeight: any;
@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     this.germanSelected = (key === 'de');
     this.translate.use(key);
   };
+
 
   constructor(private translate: TranslateService) {
 
@@ -37,5 +38,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
+  }
+
+  onToggleMenu() {
+    this.collapse = !this.collapse;
   }
 }
