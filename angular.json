@@ -146,5 +146,10 @@
       }
     }
   },
-  "defaultProject": "gsplegalAngular7"
+  "defaultProject": "gsplegalAngular7",
+  "cli": {
+    "cache": {
+      "enabled": false
+    }
+  }
 }
