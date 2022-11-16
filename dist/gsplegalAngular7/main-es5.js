@@ -3175,7 +3175,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "h2");
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "Sekr\xE4terinnen");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "Assistenz");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
